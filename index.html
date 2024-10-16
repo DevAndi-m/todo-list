@@ -35,6 +35,7 @@
 
         <div id="todo-details-tab" class="tab" style="display: none;">
             <button id="view-todos-btn">Back to Todos</button>
+            <button id="delete-todo-btn">Delete Todo</button>
             <h2>Todo Details</h2>
             <div id="todo-details-view">
                 <div>
@@ -50,6 +51,7 @@
                     <span>Description: </span><span id="todo-description"></span>
                     <button id="edit-description-btn">Edit</button>
                 </div>
+                
                 <div id="edit-description-container" style="display: none;">
                     <textarea id="edit-description-input"></textarea>
                     <button id="confirm-description-change-btn">Confirm Changes</button>
@@ -68,6 +70,7 @@
                     <span>Priority: </span><span id="todo-priority"></span>
                     <button id="edit-priority-btn">Edit</button>
                 </div>
+
                 <div id="edit-priority-container" style="display: none;">
                     <select id="edit-priority-input">
                         <option value="Low">Low</option>
@@ -75,6 +78,20 @@
                         <option value="High">High</option>
                     </select>
                     <button id="confirm-priority-change-btn">Confirm Changes</button>
+                </div>
+
+                <div>
+                    <span>Notes: </span><span id="todo-notes"></span>
+                    <button id="edit-notes-btn">Edit</button>
+                </div>
+                
+                <div id="edit-notes-container" style="display: none;">
+                    <textarea id="edit-notes-input"></textarea>
+                    <button id="confirm-notes-change-btn">Confirm Changes</button>
+                </div>
+
+                <div>
+                    <span>Completed: </span><input type="checkbox" id="todo-completed-checkbox">
                 </div>
             </div>
         </div>

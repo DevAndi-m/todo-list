@@ -12,6 +12,14 @@ class Todo {
     toggleComplete() {
         this.completed = !this.completed;
     }
+
+    update(fields) {
+        Object.keys(fields).forEach(key => {
+            if (fields[key] !== undefined) {
+                this[key] = fields[key];
+            }
+        });
+    }
 }
 
 export default Todo;
