@@ -1,0 +1,74 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(175, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectHolder {
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+
+.projectHolder div {
+    background-color: greenyellow;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    color: black;
+}
+
+.todo-high {
+    background-color: red;
+    color: white;
+}
+
+.todo-medium {  
+    background-color: yellow;
+    color: black;
+}
+
+.todo-low {  
+    background-color: greenyellow;
+    color: black;
+}
+
+.tab input {
+    margin-top: 20px;
+}
